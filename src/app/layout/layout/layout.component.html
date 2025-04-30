@@ -1,0 +1,30 @@
+<header class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0 hover:scale-110 transition ease-in-out duration-300"
+            routerLink="">
+            <img src="../../../assets/img/logo/logo.png" width="50" height="50">
+        </a>
+        <nav
+            class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
+            <a routerLink="/offers" routerLinkActive="active"
+                class="mr-5 hover:text-white hover:scale-110 transition ease-in-out duration-300"
+                translate>header.offers</a>
+            <a routerLink="/products" routerLinkActive="active"
+                class="mr-5 hover:text-white hover:scale-110 transition ease-in-out duration-300"
+                translate>header.products</a>
+            <a routerLink="/suppliers" routerLinkActive="active"
+                class="mr-5 hover:text-white hover:scale-110 transition ease-in-out duration-300"
+                translate>header.suppliers</a>
+        </nav>
+        <div class="relative group mr-10">
+            <button class="hover:text-white px-3 md:text-base peer" translate>header.language</button>
+            <div class="flex flex-col dropdown-container md:text-sm peer-focus:visible peer-focus:opacity-100">
+                <button class="dropdown-button" (click)="setLanguage('en')">en</button>
+                <button class="dropdown-button" (click)="setLanguage('ru')">ru</button>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="px-16 py-8">
+    <router-outlet></router-outlet>
+</div>

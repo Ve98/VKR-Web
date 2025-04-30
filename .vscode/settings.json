@@ -1,0 +1,17 @@
+{
+    "typescript.tsdk": "./src/TwoU.Navigator.Web/TwoU.Navigator.Web/FrontApp/node_modules/typescript/lib",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        },
+        "editor.formatOnSave": false
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        },
+        "editor.formatOnSave": false
+    },
+}

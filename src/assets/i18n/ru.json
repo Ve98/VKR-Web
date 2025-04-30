@@ -1,0 +1,88 @@
+{
+  "header": {
+    "offers": "Предложения",
+    "products": "Товары",
+    "suppliers": "Контрагенты",
+    "language": "Язык"
+  },
+  "notFoundPage": {
+    "title": "Страница не найдена",
+    "message": "Упс! Кажется, вы потерялись на нашем сайте. Мы не смогли найти страницу, которую вы искали. Возможно, ссылка устарела или была неправильно набрана. Пожалуйста, проверьте адрес и попробуйте снова. Мы приносим извинения за доставленные неудобства."
+  },
+  "common": {
+    "buttons": {
+      "back": "Назад",
+      "cancel": "Отмена",
+      "ok": "Ок",
+      "add": "Добавить",
+      "delete": "Удалить",
+      "edit": "Изменить",
+      "create": "Создать",
+      "export": "Экспортировать"
+    },
+    "validators": {
+      "requiredField": "Обязательное поле",
+      "belowZero": "Значение должно быть больше 0",
+      "invalidRange": "Некорректный диапазон",
+      "invalidFromToRange": "\"От\" должно быть меньше или равно \"До\""
+    },
+    "notifications": {
+      "completedSuccessfully": "Успешно выполнено",
+      "completedError": "Произошла ошибка"
+    },
+    "measurements": {
+      "pcs": "Шт."
+    }
+  },
+  "paginator": {
+    "itemsPerPage": "Элементов на странице",
+    "nextPage": "Следующая страница",
+    "previousPage": "Предыдущая страница",
+    "firstPageLabel": "Первая страница",
+    "lastPageLabel": "Последняя страница",
+    "range": "из"
+  },
+  "offers": {
+    "list": {
+      "table": {
+        "name": "Заказ",
+        "date": "Дата поставки",
+        "amount": "Сумма",
+        "product": "Товар",
+        "partNumber": "Парт номер",
+        "quantity": "Количество",
+        "price": "Цена",
+        "additionalExpenses": "Доп. расходы",
+        "commission": "Комиссия",
+        "description": "Описание",
+        "supplier": "Контрагент"
+      },
+      "filters": {
+        "all": "Все",
+        "amount": "Сумма",
+        "additionalExpenses": "Доп. расходы",
+        "commission": "Комиссия",
+        "product.name": "Товар",
+        "product.price": "Цена товара",
+        "product.quantity": "Кол-во товаров"
+      }
+    }
+  },
+  "suppliers": {
+    "list": {
+      "table": {
+        "name": "Имя",
+        "email": "Email"
+      }
+    }
+  },
+  "products": {
+    "list": {
+      "table": {
+        "name": "Имя",
+        "measurement": "Ед. измерения",
+        "description": "Описание"
+      }
+    }
+  }
+}

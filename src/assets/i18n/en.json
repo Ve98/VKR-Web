@@ -1,0 +1,88 @@
+{
+  "header": {
+    "offers": "Offers",
+    "products": "Products",
+    "suppliers": "Suppliers",
+    "language": "Language"
+  },
+  "notFoundPage": {
+    "title": "Page Not Found",
+    "message": "Oops! It seems you got lost on our site. We couldn't find the page you were looking for. The link might be outdated or incorrectly typed. Please check the address and try again. We apologize for any inconvenience caused."
+  },
+  "common": {
+    "buttons": {
+      "back": "Back",
+      "cancel": "Cancel",
+      "ok": "OK",
+      "add": "Add",
+      "delete": "Delete",
+      "edit": "Edit",
+      "create": "Create",
+      "export": "Export"
+    },
+    "validators": {
+      "requiredField": "Required field",
+      "belowZero": "Value must be greater than 0",
+      "invalidRange": "Invalid range",
+      "invalidFromToRange": "\"From\" must be less than or equal to \"To\""
+    },
+    "notifications": {
+      "completedSuccessfully": "Completed successfully",
+      "completedError": "An error occurred"
+    },
+    "measurements": {
+      "pcs": "Pcs."
+    }
+  },
+  "paginator": {
+    "itemsPerPage": "Items per page",
+    "nextPage": "Next page",
+    "previousPage": "Previous page",
+    "firstPageLabel": "First page",
+    "lastPageLabel": "Last page",
+    "range": "of"
+  },
+  "offers": {
+    "list": {
+      "table": {
+        "name": "Order",
+        "date": "Delivery Date",
+        "amount": "Amount",
+        "product": "Product",
+        "partNumber": "Part Number",
+        "quantity": "Quantity",
+        "price": "Price",
+        "additionalExpenses": "Additional Expenses",
+        "commission": "Commission",
+        "description": "Description",
+        "supplier": "Supplier"
+      },
+      "filters": {
+        "all": "All",
+        "amount": "Amount",
+        "additionalExpenses": "Additional Expenses",
+        "commission": "Commission",
+        "product.name": "Product",
+        "product.price": "Product Price",
+        "product.quantity": "Product Quantity"
+      }
+    }
+  },
+  "suppliers": {
+    "list": {
+      "table": {
+        "name": "Name",
+        "email": "Email"
+      }
+    }
+  },
+  "products": {
+    "list": {
+      "table": {
+        "name": "Name",
+        "measurement": "Unit of Measurement",
+        "description": "Description"
+      }
+    }
+  }
+}

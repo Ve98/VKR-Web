@@ -1,0 +1,68 @@
+<div class="flex justify-between mb-3">
+    <div class="flex items-center gap-3">
+        <h1 class="underline cursor-pointer hover:scale-110 transition ease-in-out duration-300" (click)="back()"
+            translate>header.offers</h1>
+        <span class="mb-4">
+            <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 9 4-4-4-4" />
+            </svg>
+        </span>
+        <h1>{{ (offer$ | async)?.id }}</h1>
+    </div>
+</div>
+<ng-container *ngIf="offer$ | async as offer">
+    <div class="flex flex-col gap-8">
+        <div class="w-1/2">
+            <table class="table-no-header">
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td translate>offers.list.table.date</td>
+                    <td>{{ offer.date }}</td>
+                </tr>
+                <tr>
+                    <td translate>offers.list.table.additionalExpenses</td>
+                    <td>{{ offer.additionalExpenses }}</td>
+                </tr>
+                <tr>
+                    <td translate>offers.list.table.commission</td>
+                    <td>{{ offer.commission }}</td>
+                </tr>
+                <tr>
+                    <td translate>offers.list.table.amount</td>
+                    <td>{{ offer.amount }}</td>
+                </tr>
+                <tr *ngIf="offer.supplier">
+                    <td translate>offers.list.table.supplier</td>
+                    <td>{{ offer.supplier.name }}</td>
+                </tr>
+                <tr>
+                    <td translate>offers.list.table.description</td>
+                    <td>{{ offer.description }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="w-1/2">
+            <h2 translate>offers.list.table.product</h2>
+            <table class="table-no-header">
+                <tr>
+                    <th translate>offers.list.table.product</th>
+                    <th translate>offers.list.table.partNumber</th>
+                    <th translate>offers.list.table.quantity</th>
+                    <th translate>offers.list.table.price</th>
+                </tr>
+                <tr>
+                    <td>{{ offer.product.name }}</td>
+                    <td>{{ offer.product.partNumber }}</td>
+                    <td>{{ offer.product.quantity }}</td>
+                    <td>{{ offer.product.price }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</ng-container>

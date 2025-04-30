@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .custom-button {
+        @apply relative bg-slate-700
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+table {
+    width: 100%;
+}
+
+form {
+    min-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flat-button {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.flat-button.white {
+    color: black;
+    border-width: 1px;
+    border-color: #D1D5DB;
+    background-color: #ffffff;
+
+    &:hover {
+        background-color: #F3F4F6;
+    }
+}
+
+.flat-button.green {
+    background-color: #15803d;
+
+    &:hover {
+        background-color: #166534;
+    }
+}
+
+.flat-button.orange {
+    background-color: #fb923c;
+
+    &:hover {
+        background-color: #f97316;
+    }
+}
+
+.flat-button.red {
+    background-color: #dc2626;
+
+    &:hover {
+        background-color: #b91c1c;
+    }
+}
+
+.modal-body {
+    overflow-y: auto;
+    position: relative;
+    flex: 1 1 auto;
+}
+
+.table-border th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-border td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-no-header th:first-child,
+.table-no-header td:first-child {
+    width: 25%;
+}
+
+.table-no-header td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
